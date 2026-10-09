@@ -40,6 +40,8 @@
   --color-warning-foreground: var(--warning-foreground);
   --color-border: var(--border);
   --color-border-strong: var(--border-strong);
+  /* Outline around solid controls: transparent in default and slate, solid in neo. */
+  --color-edge: var(--edge);
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-overlay: var(--overlay);
@@ -112,6 +114,7 @@
     --warning-foreground: oklch(0.2 0.03 80);
     --border: oklch(0.91 0 0);
     --border-strong: oklch(0.75 0 0);
+    --edge: transparent;
     --input: oklch(0.88 0 0);
     --ring: oklch(0.55 0 0);
     --overlay: oklch(0 0 0 / 0.5);
@@ -142,6 +145,7 @@
     --warning-foreground: oklch(0.2 0.03 80);
     --border: oklch(1 0 0 / 0.12);
     --border-strong: oklch(1 0 0 / 0.28);
+    --edge: transparent;
     --input: oklch(1 0 0 / 0.16);
     --ring: oklch(0.7 0 0);
     --overlay: oklch(0 0 0 / 0.7);
@@ -176,6 +180,7 @@
     --warning-foreground: oklch(0.25 0.05 60);
     --border: oklch(0.92 0.01 255);
     --border-strong: oklch(0.8 0.02 255);
+    --edge: transparent;
     --input: oklch(0.88 0.015 255);
     --ring: oklch(0.6 0.18 260);
     --overlay: oklch(0.2 0.03 265 / 0.5);
@@ -205,6 +210,7 @@
     --warning-foreground: oklch(0.22 0.04 60);
     --border: oklch(1 0 0 / 0.1);
     --border-strong: oklch(1 0 0 / 0.24);
+    --edge: transparent;
     --input: oklch(1 0 0 / 0.15);
     --ring: oklch(0.68 0.16 255);
     --overlay: oklch(0.05 0.02 265 / 0.7);
@@ -239,6 +245,7 @@
     --warning-foreground: oklch(0.15 0 0);
     --border: oklch(0.15 0 0);
     --border-strong: oklch(0.15 0 0);
+    --edge: var(--border-strong);
     --input: oklch(0.15 0 0);
     --ring: oklch(0.15 0 0);
     --overlay: oklch(0.15 0 0 / 0.4);
@@ -268,6 +275,7 @@
     --warning-foreground: oklch(0.15 0 0);
     --border: oklch(0.97 0.02 95);
     --border-strong: oklch(0.97 0.02 95);
+    --edge: var(--border-strong);
     --input: oklch(0.97 0.02 95);
     --ring: oklch(0.88 0.18 95);
     --overlay: oklch(0 0 0 / 0.6);

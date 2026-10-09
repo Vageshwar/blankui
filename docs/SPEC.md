@@ -60,7 +60,7 @@ Agents using today's libraries make the same mistakes again and again:
 - Token names follow shadcn where they are clear, rename the misleading ones, and add what is missing:
   - `background`, `foreground`, `primary`, `primary-foreground`, `secondary`, `secondary-foreground`, `muted`, `muted-foreground`, `destructive`, `destructive-foreground`, `border`, `input`, `ring`
   - `surface-hover` (shadcn calls this `accent`, which agents misuse as a brand color)
-  - new: `surface`, `surface-raised`, `border-strong`, `success`, `success-foreground`, `warning`, `warning-foreground`
+  - new: `surface`, `surface-raised`, `border-strong`, `edge` (outline around solid controls, visible only in neo), `success`, `success-foreground`, `warning`, `warning-foreground`
 - Switching: `data-theme` and `data-mode` attributes on `<html>`. Compatible with `next-themes` (`attribute="data-mode"`). No custom provider.
 
 ## v1 scope

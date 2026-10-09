@@ -24,6 +24,7 @@ const colorTokens = [
   "warning-foreground",
   "border",
   "border-strong",
+  "edge",
   "input",
   "ring",
   "overlay",
