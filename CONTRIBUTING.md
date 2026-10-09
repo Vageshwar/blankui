@@ -63,7 +63,7 @@ Rules live in `packages/eslint-plugin`. Every message must tell the reader what 
 
 ## Evals
 
-Eval tasks live in `evals/tasks`. See `evals/README.md` for the format and how to run them (`pnpm --filter @blankui/evals eval:setup`, then `eval:run`). Running agents costs money, so the eval suite runs on demand and not on every PR.
+Eval tasks live in `evals/tasks`. See `evals/README.md` for the format and how to run them (from the repo root: `pnpm eval:setup`, then `pnpm eval:run --suite all`). Running agents costs money, so the eval suite runs on demand and not on every PR.
 
 ## Releasing
 

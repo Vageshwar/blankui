@@ -1,5 +1,5 @@
 // Runs agents on eval tasks and scores the results.
-// Usage: pnpm --filter @blankui/evals eval:run --agent claude --suite blankui,shadcn --tasks login-form,invoice-table
+// Usage (from the repo root): pnpm eval:run --agent claude --suite blankui,shadcn --tasks login-form,invoice-table
 import { spawnSync } from "node:child_process"
 import { cpSync, existsSync, mkdirSync, symlinkSync, writeFileSync } from "node:fs"
 import path from "node:path"
@@ -25,7 +25,9 @@ const agents = {
 
 type AgentName = keyof typeof agents
 
+// pnpm passes a literal "--" when the user writes one, so drop it before parsing.
 const { values } = parseArgs({
+  args: process.argv.slice(2).filter((a) => a !== "--"),
   options: {
     agent: { type: "string", default: "claude" },
     suite: { type: "string", default: "blankui,shadcn" },
@@ -37,6 +39,11 @@ const { values } = parseArgs({
 const agent = values.agent as AgentName
 if (!(agent in agents))
   throw new Error(`Unknown agent "${agent}". Use: ${Object.keys(agents).join(", ")}`)
+if (spawnSync(agent, ["--version"], { encoding: "utf8" }).error) {
+  throw new Error(
+    `The "${agent}" CLI is not installed or not on PATH. Install it and log in, then run again.`,
+  )
+}
 const runSuites = (values.suite === "all" ? suites : values.suite!.split(",")) as Suite[]
 for (const s of runSuites)
   if (!suites.includes(s)) throw new Error(`Unknown suite "${s}". Use: ${suites.join(", ")} or all`)
