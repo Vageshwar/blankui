@@ -60,6 +60,48 @@
   --font-mono: var(--font-code);
 }
 
+/* Enter animations for overlays. Components use them with motion-safe: so reduced motion is respected. */
+@theme {
+  --animate-fade-in: bui-fade-in 150ms ease-out;
+  --animate-scale-in: bui-scale-in 150ms ease-out;
+  --animate-slide-in-right: bui-slide-in-right 200ms ease-out;
+  --animate-slide-in-left: bui-slide-in-left 200ms ease-out;
+  --animate-slide-in-top: bui-slide-in-top 200ms ease-out;
+  --animate-slide-in-bottom: bui-slide-in-bottom 200ms ease-out;
+
+  @keyframes bui-fade-in {
+    from {
+      opacity: 0;
+    }
+  }
+  @keyframes bui-scale-in {
+    from {
+      opacity: 0;
+      scale: 0.96;
+    }
+  }
+  @keyframes bui-slide-in-right {
+    from {
+      translate: 100% 0;
+    }
+  }
+  @keyframes bui-slide-in-left {
+    from {
+      translate: -100% 0;
+    }
+  }
+  @keyframes bui-slide-in-top {
+    from {
+      translate: 0 -100%;
+    }
+  }
+  @keyframes bui-slide-in-bottom {
+    from {
+      translate: 0 100%;
+    }
+  }
+}
+
 /* Border width follows the theme (1px by default, 2px in neo), so plain `border` just works. */
 @utility border {
   border-width: var(--border-width, 1px);

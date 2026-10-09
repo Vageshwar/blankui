@@ -13,7 +13,7 @@ whenNotToUse:
     use: tabs
   - when: Toggling a setting on or off.
     use: checkbox
-related: [layout, card]
+related: [layout, card, dialog, alert-dialog]
 requiredParts: [Button]
 antiPatterns:
   - avoid: "<button className=...> (a raw button element)"
