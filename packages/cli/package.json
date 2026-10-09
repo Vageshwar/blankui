@@ -1,12 +1,12 @@
 {
-  "name": "blankui",
+  "name": "blankui-cli",
   "version": "0.1.0",
   "description": "Add BlankUI components to your project: copy-in React components built for coding agents.",
   "license": "MIT",
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Vageshwar/blankui",
+    "url": "git+https://github.com/Vageshwar/blankui.git",
     "directory": "packages/cli"
   },
   "homepage": "https://blank.vageshwar.dev",

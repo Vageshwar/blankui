@@ -58,7 +58,7 @@ export default function Home() {
             Cursor and every other agent that writes UI today.
           </p>
           <Stack gap={3} className="max-w-md">
-            <CopyCommand command="npx blankui init" />
+            <CopyCommand command="npx blankui-cli init" />
           </Stack>
           <Inline gap={3}>
             <Button asChild size="lg">

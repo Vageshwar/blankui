@@ -35,7 +35,7 @@ export async function check(project: Project, registry: Registry): Promise<Repor
   const problems: string[] = []
   const notes: string[] = []
   const config = project.componentsJson()
-  if (!config) return { problems: ["No components.json. Run npx blankui init."], notes }
+  if (!config) return { problems: ["No components.json. Run npx blankui-cli init."], notes }
 
   const css = config.tailwind.css || project.mainCss()
   if (!css || !project.exists(css))
@@ -47,11 +47,13 @@ export async function check(project: Project, registry: Registry): Promise<Repor
 
   const agents = project.exists("AGENTS.md") ? project.read("AGENTS.md") : undefined
   if (!hasBlock(agents))
-    problems.push("AGENTS.md has no BlankUI section. Run npx blankui init or npx blankui update.")
+    problems.push(
+      "AGENTS.md has no BlankUI section. Run npx blankui-cli init or npx blankui-cli update.",
+    )
   else {
     const latest = (await registry.agentsBlock()).trim()
     if (!agents!.includes(latest))
-      notes.push("The BlankUI section in AGENTS.md is out of date. Run npx blankui update.")
+      notes.push("The BlankUI section in AGENTS.md is out of date. Run npx blankui-cli update.")
   }
   if (!project.exists("CLAUDE.md") || !/^@AGENTS\.md\s*$/m.test(project.read("CLAUDE.md"))) {
     notes.push(
@@ -79,13 +81,13 @@ export async function check(project: Project, registry: Registry): Promise<Repor
     for (const { rel, content } of planItem(project, item)) {
       const state = fileState(project, lock, rel)
       if (state === "missing")
-        problems.push(`${rel} is missing. Run npx blankui add ${name} --overwrite.`)
+        problems.push(`${rel} is missing. Run npx blankui-cli add ${name} --overwrite.`)
       else if (state === "edited")
         problems.push(
           `${rel} was changed locally. Prefer adding a variant, and record why in the component's .md file.`,
         )
       else if (hash(project.read(rel)) !== hash(content)) {
-        notes.push(`${rel}: a newer version is available. Run npx blankui update ${name}.`)
+        notes.push(`${rel}: a newer version is available. Run npx blankui-cli update ${name}.`)
       }
     }
   }

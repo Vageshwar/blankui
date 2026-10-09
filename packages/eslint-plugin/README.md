@@ -4,7 +4,7 @@ ESLint rules that keep code inside the [BlankUI](https://blank.vageshwar.dev) de
 
 ## Install
 
-`npx blankui init` sets this up for you. To do it by hand:
+`npx blankui-cli init` sets this up for you. To do it by hand:
 
 ```bash
 npm install -D eslint-plugin-blankui typescript-eslint

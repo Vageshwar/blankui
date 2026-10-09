@@ -151,7 +151,7 @@ export async function init(options: InitOptions): Promise<number> {
     log.info(`\nInstall the dependencies:\n${commands.map((c) => `  ${c}`).join("\n")}`)
   }
 
-  log.info(`\nDone. Add components with: npx blankui add button field dialog`)
+  log.info(`\nDone. Add components with: npx blankui-cli add button field dialog`)
   log.info(
     `Set a theme on <html>: data-theme="default" | "slate" | "neo" and data-mode="light" | "dark".`,
   )
