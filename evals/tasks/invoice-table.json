@@ -1,0 +1,9 @@
+{
+  "id": "invoice-table",
+  "title": "Invoice table",
+  "prompt": "A table of five invoices with invoice number, status, date and amount (right aligned), with a caption.",
+  "expect": {
+    "shared": ["Table"],
+    "blankuiOnly": []
+  }
+}

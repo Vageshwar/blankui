@@ -1,0 +1,9 @@
+{
+  "id": "create-project-dialog",
+  "title": "Create project dialog",
+  "prompt": "A 'New project' button that opens a modal with name, description and a visibility picker (Private, Team, Public), and a Create button.",
+  "expect": {
+    "shared": ["Dialog", "Input", "Textarea", "Select", "Button"],
+    "blankuiOnly": ["Field"]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "edit-member-dialog",
+  "title": "Edit member dialog",
+  "prompt": "An 'Edit member' button that opens a modal with the member's name and a role picker (Admin, Member, Viewer), plus Cancel and Save buttons.",
+  "expect": {
+    "shared": ["Dialog", "Input", "Select", "Button"],
+    "blankuiOnly": ["Field"]
+  }
+}

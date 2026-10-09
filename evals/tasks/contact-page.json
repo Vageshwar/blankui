@@ -1,0 +1,9 @@
+{
+  "id": "contact-page",
+  "title": "Contact page",
+  "prompt": "A contact page: a heading and intro, then two columns on desktop: a contact form (name, email, message, send) and a card with the office address.",
+  "expect": {
+    "shared": ["Card", "Input", "Textarea", "Button"],
+    "blankuiOnly": ["Container", "Grid", "Field"]
+  }
+}

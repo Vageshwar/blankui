@@ -1,0 +1,9 @@
+{
+  "id": "profile-settings",
+  "title": "Profile settings",
+  "prompt": "A profile settings section in a card: name, email and a short bio. Save and Cancel buttons at the bottom right.",
+  "expect": {
+    "shared": ["Card", "Input", "Textarea", "Button"],
+    "blankuiOnly": ["Field", "Inline"]
+  }
+}

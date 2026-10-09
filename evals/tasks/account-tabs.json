@@ -1,0 +1,9 @@
+{
+  "id": "account-tabs",
+  "title": "Account tabs",
+  "prompt": "Account settings split into tabs: Account (name field), Password (current and new password fields), Notifications (two checkboxes).",
+  "expect": {
+    "shared": ["Tabs", "Input", "Checkbox"],
+    "blankuiOnly": ["Field"]
+  }
+}

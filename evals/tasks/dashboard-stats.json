@@ -1,0 +1,9 @@
+{
+  "id": "dashboard-stats",
+  "title": "Dashboard stats",
+  "prompt": "A dashboard header with a title and a 'New report' button, then four stat cards (revenue, users, orders, churn) in a responsive grid.",
+  "expect": {
+    "shared": ["Card", "Button"],
+    "blankuiOnly": ["Grid", "Stack"]
+  }
+}

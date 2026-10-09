@@ -1,0 +1,9 @@
+{
+  "id": "newsletter-inline",
+  "title": "Newsletter signup",
+  "prompt": "A newsletter signup row: an email input and a Subscribe button side by side, stacking on small screens.",
+  "expect": {
+    "shared": ["Input", "Button"],
+    "blankuiOnly": ["Inline"]
+  }
+}

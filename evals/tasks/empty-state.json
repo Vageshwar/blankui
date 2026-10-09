@@ -1,0 +1,9 @@
+{
+  "id": "empty-state",
+  "title": "Empty state",
+  "prompt": "An empty state for a projects page: an icon, a short heading, one line of help text and a 'Create project' button, centered.",
+  "expect": {
+    "shared": ["Button"],
+    "blankuiOnly": ["Stack"]
+  }
+}

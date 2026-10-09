@@ -1,0 +1,9 @@
+{
+  "id": "save-toast",
+  "title": "Save with feedback",
+  "prompt": "A small settings form with a 'Save' button. Saving shows a short success message. If saving fails, show an error message with a Retry action. Assume a toast container is already rendered in the app root.",
+  "expect": {
+    "shared": ["Button", "Input"],
+    "blankuiOnly": ["Field"]
+  }
+}

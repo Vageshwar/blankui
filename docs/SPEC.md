@@ -104,7 +104,7 @@ Agents using today's libraries make the same mistakes again and again:
 ## Evals
 
 - About 20 realistic UI tasks to start, run with Claude Code (headless) and Codex CLI.
-- Baseline: the same tasks against plain shadcn/ui.
+- Baseline: the same tasks against plain shadcn/ui, on Radix (`shadcn`) and on Base UI, its current default (`shadcn-base`).
 - Automated scoring: TypeScript passes, lint violation count, intended component usage (AST check), and accessibility (axe).
 
 ## Repo

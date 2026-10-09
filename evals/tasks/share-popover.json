@@ -1,0 +1,9 @@
+{
+  "id": "share-popover",
+  "title": "Share popover",
+  "prompt": "A 'Share' button that opens a small floating panel with the page link in a read-only field and a 'Copy link' button.",
+  "expect": {
+    "shared": ["Popover", "Input", "Button"],
+    "blankuiOnly": ["Field"]
+  }
+}
