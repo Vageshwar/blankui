@@ -1,0 +1,37 @@
+{
+  "name": "blankui",
+  "version": "0.1.0",
+  "description": "Add BlankUI components to your project: copy-in React components built for coding agents.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vageshwar/blankui",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://blank.vageshwar.dev",
+  "bin": {
+    "blankui": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --clean",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "commander": "15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.6",
+    "tsup": "8.5.1",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3",
+    "vitest": "5.0.1"
+  }
+}

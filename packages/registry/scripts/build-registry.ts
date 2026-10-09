@@ -153,6 +153,7 @@ export function agentsBlock(
     "- Icons come from `lucide-react` only.",
     "- Do not edit files in `components/ui` to change a single usage. Add a variant there, or use the component as documented.",
     "- Run the linter after changes. BlankUI lint messages say what to use instead.",
+    "- If a component you need is not in `components/ui`, add it with `npx blankui add <name>` instead of building your own.",
     "",
     "Components:",
     "",
