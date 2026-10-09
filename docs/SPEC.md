@@ -44,12 +44,14 @@ Agents using today's libraries make the same mistakes again and again:
 
 ## Strictness (guarded)
 
-- The Tailwind default color palette is removed. Only semantic tokens exist, so `bg-blue-500` fails at build time.
+- The Tailwind default color palette is removed. Only semantic tokens exist. Tailwind does not fail on unknown classes, so `bg-blue-500` silently renders nothing. The `no-palette-colors` lint rule reports it.
 - `@blankui/eslint-plugin` reports:
+  - Tailwind palette colors such as `bg-blue-500` and `text-white`
   - arbitrary values such as `[13px]` and `[#hex]`
   - color values in inline `style`
   - raw elements (`<button>`, `<input>`, `<select>`) when a BlankUI component exists
-  - direct imports from `radix-ui` or `@radix-ui/*` outside `components/ui`
+  - direct imports from `radix-ui`, `@radix-ui/*` or `sonner` outside `components/ui`
+  - a `Card` inside another `Card`
 - Every lint message names the fix, for example `Use <Stack gap={4}> instead of space-y-4.`
 - `className` is still allowed.
 

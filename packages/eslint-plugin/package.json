@@ -1,0 +1,42 @@
+{
+  "name": "@blankui/eslint-plugin",
+  "version": "0.1.0",
+  "description": "ESLint rules that keep code inside the BlankUI design system. Every message says what to use instead.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vageshwar/blankui",
+    "directory": "packages/eslint-plugin"
+  },
+  "homepage": "https://blank.vageshwar.dev",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0 || ^10.0.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/utils": "8.70.1"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.6",
+    "@typescript-eslint/parser": "8.70.1",
+    "@typescript-eslint/rule-tester": "8.70.1",
+    "eslint": "10.11.0",
+    "tsup": "8.5.1",
+    "typescript": "6.0.3",
+    "vitest": "5.0.1"
+  }
+}
