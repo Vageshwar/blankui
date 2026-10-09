@@ -2,7 +2,11 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "types": ["vitest/globals", "@testing-library/jest-dom", "node"],
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "paths": {
+      "@/lib/*": ["./src/lib/*"],
+      "@/components/ui/*": ["./src/ui/*"]
+    }
   },
   "include": ["src", "test", "scripts", "vitest.config.ts"]
 }
