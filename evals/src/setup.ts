@@ -69,7 +69,10 @@ function setupShadcn(name: "shadcn" | "shadcn-base") {
   )
 }
 
-const which = process.argv[2] ?? "all"
+const which = process.argv.slice(2).find((a) => a !== "--") ?? "all"
+if (!["all", "blankui", "shadcn", "shadcn-base"].includes(which)) {
+  throw new Error(`Unknown fixture "${which}". Use: all, blankui, shadcn or shadcn-base`)
+}
 if (which === "all" || which === "blankui") setupBlankui()
 if (which === "all" || which === "shadcn") setupShadcn("shadcn")
 if (which === "all" || which === "shadcn-base") setupShadcn("shadcn-base")

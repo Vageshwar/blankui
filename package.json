@@ -13,7 +13,9 @@
     "lint": "pnpm -r --if-present lint",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "check": "pnpm format:check && pnpm typecheck && pnpm lint && pnpm test && pnpm build"
+    "check": "pnpm format:check && pnpm typecheck && pnpm lint && pnpm test && pnpm build",
+    "eval:setup": "pnpm --filter @blankui/evals eval:setup",
+    "eval:run": "pnpm --filter @blankui/evals eval:run"
   },
   "devDependencies": {
     "prettier": "3.9.9",

@@ -12,11 +12,15 @@ Every app is the same Vite + React 19 + Tailwind CSS v4 project with the same se
 
 ## Run it
 
+Run these from the repo root:
+
 ```bash
-pnpm --filter @blankui/evals eval:setup            # build the three fixture apps in evals/.work
-pnpm --filter @blankui/evals eval:run --agent claude --suite blankui,shadcn
-pnpm --filter @blankui/evals eval:run --agent codex --suite all --tasks login-form,invoice-table
+pnpm eval:setup                                   # build the three fixture apps in evals/.work (once)
+pnpm eval:run --agent claude --suite all          # all 20 tasks in all three suites (60 agent runs)
+pnpm eval:run --agent claude --suite blankui,shadcn --tasks login-form,invoice-table
 ```
+
+Options: `--agent claude|codex`, `--suite blankui,shadcn,shadcn-base` or `all` (default `blankui,shadcn`), `--tasks <ids>` or `all`, `--timeout <seconds>` per task (default 600).
 
 Results go to `evals/results/<run>.json` and `<run>.md`. Running agents costs money, so the suite runs on demand, not in CI. `pnpm --filter @blankui/evals test` checks the tasks and the scoring code and does run in CI.
 
