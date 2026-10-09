@@ -64,7 +64,7 @@ export async function check(project: Project, registry: Registry): Promise<Repor
     "eslint.config.ts",
     "eslint.config.cjs",
   ].find((f) => project.exists(f))
-  if (!eslint || !project.read(eslint).includes("@blankui/eslint-plugin"))
+  if (!eslint || !project.read(eslint).includes("eslint-plugin-blankui"))
     problems.push(
       "The BlankUI ESLint plugin is not set up. See https://blank.vageshwar.dev/docs/lint",
     )

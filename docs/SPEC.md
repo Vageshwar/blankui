@@ -45,7 +45,7 @@ Agents using today's libraries make the same mistakes again and again:
 ## Strictness (guarded)
 
 - The Tailwind default color palette is removed. Only semantic tokens exist. Tailwind does not fail on unknown classes, so `bg-blue-500` silently renders nothing. The `no-palette-colors` lint rule reports it.
-- `@blankui/eslint-plugin` reports:
+- `eslint-plugin-blankui` reports:
   - Tailwind palette colors such as `bg-blue-500` and `text-white`
   - arbitrary values such as `[13px]` and `[#hex]`
   - color values in inline `style`

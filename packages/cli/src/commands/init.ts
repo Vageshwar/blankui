@@ -12,7 +12,7 @@ export interface InitOptions {
 }
 
 const eslintConfig = `import tseslint from "typescript-eslint"
-import blankui from "@blankui/eslint-plugin"
+import blankui from "eslint-plugin-blankui"
 
 export default tseslint.config(
   { ignores: ["dist/**", ".next/**", "node_modules/**"] },
@@ -128,16 +128,16 @@ export async function init(options: InitOptions): Promise<number> {
   if (!existingEslint) {
     writeFile(project, "eslint.config.mjs", eslintConfig)
     log.ok("eslint.config.mjs")
-  } else if (!project.read(existingEslint).includes("@blankui/eslint-plugin")) {
+  } else if (!project.read(existingEslint).includes("eslint-plugin-blankui")) {
     log.warn(
-      `Add BlankUI to ${existingEslint}:\n\n  import blankui from "@blankui/eslint-plugin"\n  // ...then add ...blankui.configs.recommended to the exported config array\n`,
+      `Add BlankUI to ${existingEslint}:\n\n  import blankui from "eslint-plugin-blankui"\n  // ...then add ...blankui.configs.recommended to the exported config array\n`,
     )
   }
 
   writeFile(project, lockFile, lockJson(lock))
 
   const deps = utils.dependencies
-  const devDeps = ["@blankui/eslint-plugin", "typescript-eslint", "eslint"].filter(
+  const devDeps = ["eslint-plugin-blankui", "typescript-eslint", "eslint"].filter(
     (d) => !project.hasDependency(d),
   )
   const commands = [

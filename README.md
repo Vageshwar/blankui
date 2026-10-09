@@ -43,7 +43,7 @@ npx shadcn add https://blank.vageshwar.dev/r/button.json
 | Path                     | What it is                                        |
 | ------------------------ | ------------------------------------------------- |
 | `packages/registry`      | Component sources, docs, tokens, registry builder |
-| `packages/eslint-plugin` | `@blankui/eslint-plugin`                          |
+| `packages/eslint-plugin` | `eslint-plugin-blankui`                           |
 | `packages/cli`           | `blankui` CLI (`init`, `add`, `doctor`, `update`) |
 | `apps/docs`              | Docs site and registry host (blank.vageshwar.dev) |
 | `evals`                  | Agent eval tasks and scoring                      |

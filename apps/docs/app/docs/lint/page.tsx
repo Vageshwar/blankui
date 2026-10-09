@@ -4,12 +4,12 @@ import { Markdown } from "@/docs/components/markdown"
 
 export const metadata: Metadata = { title: "Lint rules" }
 
-const content = `\`@blankui/eslint-plugin\` catches what types cannot. Every message says what to use instead, because agents act on the exact text of lint errors. \`npx blankui init\` sets it up.
+const content = `\`eslint-plugin-blankui\` catches what types cannot. Every message says what to use instead, because agents act on the exact text of lint errors. \`npx blankui init\` sets it up.
 
 \`\`\`js
 // eslint.config.js
 import tseslint from "typescript-eslint"
-import blankui from "@blankui/eslint-plugin"
+import blankui from "eslint-plugin-blankui"
 
 export default tseslint.config(...tseslint.configs.recommended, ...blankui.configs.recommended)
 \`\`\`

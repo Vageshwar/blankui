@@ -1,4 +1,4 @@
-# @blankui/eslint-plugin
+# eslint-plugin-blankui
 
 ESLint rules that keep code inside the [BlankUI](https://blank.vageshwar.dev) design system. Every message says what to use instead, because coding agents act on the exact text of lint errors.
 
@@ -7,13 +7,13 @@ ESLint rules that keep code inside the [BlankUI](https://blank.vageshwar.dev) de
 `npx blankui init` sets this up for you. To do it by hand:
 
 ```bash
-npm install -D @blankui/eslint-plugin typescript-eslint
+npm install -D eslint-plugin-blankui typescript-eslint
 ```
 
 ```js
 // eslint.config.js
 import tseslint from "typescript-eslint"
-import blankui from "@blankui/eslint-plugin"
+import blankui from "eslint-plugin-blankui"
 
 export default tseslint.config(...tseslint.configs.recommended, ...blankui.configs.recommended)
 ```

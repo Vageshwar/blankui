@@ -1,5 +1,5 @@
 import tseslint from "typescript-eslint"
-import blankui from "@blankui/eslint-plugin"
+import blankui from "eslint-plugin-blankui"
 
 export default tseslint.config(
   { ignores: [".next/**", "public/**", "next-env.d.ts"] },

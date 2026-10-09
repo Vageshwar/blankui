@@ -1,5 +1,5 @@
 {
-  "name": "@blankui/eslint-plugin",
+  "name": "eslint-plugin-blankui",
   "version": "0.1.0",
   "description": "ESLint rules that keep code inside the BlankUI design system. Every message says what to use instead.",
   "license": "MIT",
