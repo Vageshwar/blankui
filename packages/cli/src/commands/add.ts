@@ -31,12 +31,12 @@ export async function add(names: string[], options: AddOptions): Promise<number>
   const project = new Project(path.resolve(options.cwd))
   const registry = new Registry(options.registry)
   if (!project.componentsJson()) {
-    log.error("No components.json found. Run npx blankui init first.")
+    log.error("No components.json found. Run npx blankui-cli init first.")
     return 1
   }
   if (names.length === 0) {
     log.error(
-      `Name the components to add, for example: npx blankui add button dialog. Available: ${(await registry.names()).join(", ")}`,
+      `Name the components to add, for example: npx blankui-cli add button dialog. Available: ${(await registry.names()).join(", ")}`,
     )
     return 1
   }

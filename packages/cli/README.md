@@ -1,13 +1,13 @@
-# blankui
+# blankui-cli
 
 The CLI for [BlankUI](https://blank.vageshwar.dev), a React 19 + Tailwind CSS v4 component library built for coding agents.
 
 ```bash
-npx blankui init                 # tokens, themes, lint rules, AGENTS.md section
-npx blankui add button dialog    # copy components (and their .md docs) into components/ui
-npx blankui add all
-npx blankui doctor               # check the setup, report edited or outdated components
-npx blankui update               # update components and the AGENTS.md section
+npx blankui-cli init                 # tokens, themes, lint rules, AGENTS.md section
+npx blankui-cli add button dialog    # copy components (and their .md docs) into components/ui
+npx blankui-cli add all
+npx blankui-cli doctor               # check the setup, report edited or outdated components
+npx blankui-cli update               # update components and the AGENTS.md section
 ```
 
 ## init

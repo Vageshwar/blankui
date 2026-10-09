@@ -56,7 +56,7 @@ export default async function ComponentPage({ params }: { params: Promise<{ name
         <h1 className="font-heading text-4xl font-bold">{meta.title}</h1>
         <p className="text-lg text-muted-foreground">{meta.description}</p>
         <Stack gap={2} className="max-w-lg">
-          <CopyCommand command={`npx blankui add ${name}`} />
+          <CopyCommand command={`npx blankui-cli add ${name}`} />
         </Stack>
         <Inline gap={4} className="text-sm text-muted-foreground">
           <a

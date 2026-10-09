@@ -18,8 +18,8 @@ Docs: https://blank.vageshwar.dev
 ## Quick start
 
 ```bash
-npx blankui init
-npx blankui add button dialog field
+npx blankui-cli init
+npx blankui-cli add button dialog field
 ```
 
 `init` sets up tokens and themes, the ESLint plugin, and a short BlankUI section in your `AGENTS.md` (plus a `CLAUDE.md` that points to it).

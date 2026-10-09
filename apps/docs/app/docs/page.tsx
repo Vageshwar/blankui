@@ -45,8 +45,8 @@ export default function DocsHome() {
           rules that keep agents on track.
         </p>
         <Stack gap={2} className="max-w-md">
-          <CopyCommand command="npx blankui init" />
-          <CopyCommand command="npx blankui add button dialog field" />
+          <CopyCommand command="npx blankui-cli init" />
+          <CopyCommand command="npx blankui-cli add button dialog field" />
         </Stack>
       </Stack>
       <Markdown>{setup}</Markdown>

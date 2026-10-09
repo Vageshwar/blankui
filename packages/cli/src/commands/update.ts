@@ -17,7 +17,7 @@ export async function update(names: string[], options: UpdateOptions): Promise<n
   const project = new Project(path.resolve(options.cwd))
   const registry = new Registry(options.registry)
   if (!project.componentsJson()) {
-    log.error("No components.json found. Run npx blankui init first.")
+    log.error("No components.json found. Run npx blankui-cli init first.")
     return 1
   }
   const lock = readLock(project)

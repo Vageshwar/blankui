@@ -98,7 +98,7 @@ Agents using today's libraries make the same mistakes again and again:
 
 ## CLI and registry
 
-- npm package `blankui`. Commands: `init`, `add`, `doctor`, `update`.
+- npm package `blankui-cli` (npm blocks the name `blankui` as too similar to `blank-ui`). The installed command is `blankui`. Commands: `init`, `add`, `doctor`, `update`.
 - The registry follows the shadcn registry JSON format and is served at `https://blank.vageshwar.dev/r/<name>.json`, so `npx shadcn add https://blank.vageshwar.dev/r/button.json` also works.
 
 ## Evals
