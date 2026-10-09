@@ -65,6 +65,19 @@ Rules live in `packages/eslint-plugin`. Every message must tell the reader what 
 
 Eval tasks live in `evals/tasks`. See `evals/README.md` for the format and how to run them (`pnpm --filter @blankui/evals eval:setup`, then `eval:run`). Running agents costs money, so the eval suite runs on demand and not on every PR.
 
+## Releasing
+
+Maintainers release from GitHub Actions. No npm token is needed.
+
+1. Bump `version` in `packages/cli/package.json` and/or `packages/eslint-plugin/package.json` in a PR, and update the version string in `packages/cli/src/index.ts`.
+2. After it merges, tag `main` and push the tag:
+
+   ```bash
+   git tag v0.1.1 && git push origin v0.1.1
+   ```
+
+3. The Release workflow runs the full check and publishes every package whose version is not on npm yet, with provenance.
+
 ## Code of conduct
 
 Be kind and assume good intent. Harassment of any kind is not accepted.
