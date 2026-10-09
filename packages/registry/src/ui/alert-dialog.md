@@ -11,7 +11,7 @@ whenNotToUse:
     use: dialog
   - when: The action can be undone easily.
     use: toast
-related: [dialog, button]
+related: [dialog, button, toast]
 requiredParts:
   [
     AlertDialog,
