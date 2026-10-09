@@ -126,12 +126,9 @@ describe("accessibility", () => {
   })
 
   it("requires a label on Field", () => {
+    const noLabel = { children: null }
     // @ts-expect-error label is required
-    void (
-      <Field>
-        <Input />
-      </Field>
-    )
+    void (<Field {...noLabel} />)
     expect(true).toBe(true)
   })
 })
