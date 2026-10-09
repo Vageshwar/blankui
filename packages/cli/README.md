@@ -17,7 +17,7 @@ npx blankui update               # update components and the AGENTS.md section
 - Adds `lib/utils.ts` with `cn()`.
 - Writes a BlankUI section into `AGENTS.md` between `<!-- blankui:start -->` and `<!-- blankui:end -->`. Everything else in the file is kept.
 - Makes `CLAUDE.md` import `AGENTS.md`, so Claude Code reads the same rules.
-- Creates `eslint.config.mjs` with `@blankui/eslint-plugin`, or tells you what to add to your existing config.
+- Creates `eslint.config.mjs` with `eslint-plugin-blankui`, or tells you what to add to your existing config.
 
 ## add
 

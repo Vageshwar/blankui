@@ -9,7 +9,7 @@
     "build": "pnpm registry && next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "lint": "pnpm --filter @blankui/eslint-plugin build && eslint ."
+    "lint": "pnpm --filter eslint-plugin-blankui build && eslint ."
   },
   "dependencies": {
     "@blankui/registry": "workspace:*",
@@ -27,7 +27,7 @@
     "tailwind-merge": "3.7.0"
   },
   "devDependencies": {
-    "@blankui/eslint-plugin": "workspace:*",
+    "eslint-plugin-blankui": "workspace:*",
     "@tailwindcss/postcss": "4.3.3",
     "@types/node": "24.13.6",
     "@types/react": "19.3.0",

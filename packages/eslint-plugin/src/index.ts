@@ -18,7 +18,7 @@ export const rules = {
 }
 
 const plugin = {
-  meta: { name: "@blankui/eslint-plugin", version: "0.1.0" },
+  meta: { name: "eslint-plugin-blankui", version: "0.1.0" },
   rules,
   configs: {} as { recommended: Linter.Config[] },
 }
@@ -29,7 +29,7 @@ const plugin = {
  *
  * @example
  * // eslint.config.js
- * import blankui from "@blankui/eslint-plugin"
+ * import blankui from "eslint-plugin-blankui"
  * export default [...blankui.configs.recommended]
  */
 plugin.configs.recommended = [

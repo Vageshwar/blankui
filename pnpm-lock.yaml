@@ -215,9 +215,6 @@ importers:
         specifier: 3.7.0
         version: 3.7.0
     devDependencies:
-      '@blankui/eslint-plugin':
-        specifier: workspace:*
-        version: link:../../packages/eslint-plugin
       '@tailwindcss/postcss':
         specifier: 4.3.3
         version: 4.3.3
@@ -233,6 +230,9 @@ importers:
       eslint:
         specifier: 10.11.0
         version: 10.11.0(jiti@2.7.0)
+      eslint-plugin-blankui:
+        specifier: workspace:*
+        version: link:../../packages/eslint-plugin
       tailwindcss:
         specifier: 4.3.3
         version: 4.3.3

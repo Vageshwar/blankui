@@ -12,7 +12,7 @@ const setup = `## What \`init\` does
 
 - Adds \`styles/blankui.css\` (tokens and themes) and imports it after Tailwind.
 - Adds \`lib/utils.ts\` with the \`cn()\` helper and a \`components.json\`.
-- Sets up \`@blankui/eslint-plugin\`.
+- Sets up \`eslint-plugin-blankui\`.
 - Writes a short BlankUI section into \`AGENTS.md\` (between \`<!-- blankui:start -->\` markers, so your own content is kept) and a \`CLAUDE.md\` that points to it.
 
 ## Requirements

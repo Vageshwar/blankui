@@ -43,7 +43,7 @@ function setupBlankui() {
   const registry = path.join(workDir, "registry")
   sh(`pnpm --filter @blankui/registry build --out ${registry}`, repoRoot)
   sh(`pnpm --filter blankui build`, repoRoot)
-  sh(`pnpm --filter @blankui/eslint-plugin build`, repoRoot)
+  sh(`pnpm --filter eslint-plugin-blankui build`, repoRoot)
   const cli = `node ${path.join(repoRoot, "packages/cli/dist/index.js")} --cwd ${dir} --registry ${registry}`
   sh(`${cli} init --no-install`, dir)
   sh(`${cli} add all --no-install`, dir)
