@@ -1,0 +1,7 @@
+pnpm-lock.yaml
+node_modules
+dist
+.next
+apps/docs/public/r
+apps/docs/public/llms.txt
+evals/results

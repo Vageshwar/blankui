@@ -1,0 +1,14 @@
+node_modules
+dist
+.next
+out
+coverage
+.turbo
+.vercel
+.env*
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+evals/results/*
+!evals/results/.gitkeep
+evals/.work
