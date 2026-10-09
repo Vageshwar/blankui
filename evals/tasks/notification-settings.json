@@ -1,0 +1,9 @@
+{
+  "id": "notification-settings",
+  "title": "Notification settings",
+  "prompt": "A card with notification settings: four checkboxes with labels and short descriptions, and a Save button.",
+  "expect": {
+    "shared": ["Card", "Checkbox", "Button"],
+    "blankuiOnly": ["Field"]
+  }
+}

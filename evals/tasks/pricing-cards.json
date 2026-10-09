@@ -1,0 +1,9 @@
+{
+  "id": "pricing-cards",
+  "title": "Pricing cards",
+  "prompt": "Three pricing plans (Free, Pro, Team) as cards in a responsive grid: one column on mobile, three on desktop. Each card has a price, a short feature list and a button.",
+  "expect": {
+    "shared": ["Card", "Button"],
+    "blankuiOnly": ["Grid"]
+  }
+}

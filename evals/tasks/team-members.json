@@ -1,0 +1,9 @@
+{
+  "id": "team-members",
+  "title": "Team members",
+  "prompt": "A list of team members with avatar initials, name, a role picker per member, and an icon-only remove button.",
+  "expect": {
+    "shared": ["Select", "Button"],
+    "blankuiOnly": ["Stack"]
+  }
+}

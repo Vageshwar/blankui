@@ -1,0 +1,9 @@
+{
+  "id": "delete-confirm",
+  "title": "Delete with confirmation",
+  "prompt": "A list of three projects. Each row has a delete button that asks the user to confirm before deleting. Deleting removes the row.",
+  "expect": {
+    "shared": ["AlertDialog", "Button"],
+    "blankuiOnly": ["Stack"]
+  }
+}

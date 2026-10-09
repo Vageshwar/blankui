@@ -1,0 +1,9 @@
+{
+  "id": "mobile-nav",
+  "title": "Mobile navigation",
+  "prompt": "A site header with a logo text on the left and a menu icon button that opens a side panel with four navigation links.",
+  "expect": {
+    "shared": ["Sheet", "Button"],
+    "blankuiOnly": ["Stack"]
+  }
+}

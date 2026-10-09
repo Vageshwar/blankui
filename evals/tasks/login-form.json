@@ -1,0 +1,9 @@
+{
+  "id": "login-form",
+  "title": "Login form",
+  "prompt": "A login form with email and password fields, a 'Remember me' checkbox, and a submit button. Show an error under the email field when it is empty on submit.",
+  "expect": {
+    "shared": ["Input", "Checkbox", "Button"],
+    "blankuiOnly": ["Field"]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "editor-toolbar",
+  "title": "Editor toolbar",
+  "prompt": "A text editor toolbar with icon-only buttons for bold, italic, link and delete. Each shows a hint on hover.",
+  "expect": {
+    "shared": ["Button", "Tooltip"],
+    "blankuiOnly": ["Inline"]
+  }
+}

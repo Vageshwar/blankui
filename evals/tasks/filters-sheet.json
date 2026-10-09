@@ -1,0 +1,9 @@
+{
+  "id": "filters-sheet",
+  "title": "Filters panel",
+  "prompt": "A product list page with a 'Filters' button that opens a panel from the right side. The panel has a category picker and an 'In stock only' checkbox.",
+  "expect": {
+    "shared": ["Sheet", "Select", "Checkbox", "Button"],
+    "blankuiOnly": ["Field"]
+  }
+}

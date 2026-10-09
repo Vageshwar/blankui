@@ -1,0 +1,9 @@
+{
+  "id": "signup-validation",
+  "title": "Signup with validation",
+  "prompt": "A signup form with name, email and password. Show a helpful error under each field that is invalid, and mark required fields.",
+  "expect": {
+    "shared": ["Input", "Button"],
+    "blankuiOnly": ["Field", "Stack"]
+  }
+}
