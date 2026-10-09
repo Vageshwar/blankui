@@ -1,0 +1,40 @@
+{
+  "name": "docs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "registry": "pnpm --filter @blankui/registry build --out ../../apps/docs/public",
+    "dev": "pnpm registry && next dev",
+    "build": "pnpm registry && next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "pnpm --filter @blankui/eslint-plugin build && eslint ."
+  },
+  "dependencies": {
+    "@blankui/registry": "workspace:*",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "gray-matter": "4.0.3",
+    "lucide-react": "1.48.0",
+    "next": "16.3.6",
+    "radix-ui": "1.6.7",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1",
+    "sonner": "2.0.8",
+    "tailwind-merge": "3.7.0"
+  },
+  "devDependencies": {
+    "@blankui/eslint-plugin": "workspace:*",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "24.13.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.11.0",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.70.1"
+  }
+}

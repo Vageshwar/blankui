@@ -12,3 +12,7 @@ next-env.d.ts
 evals/results/*
 !evals/results/.gitkeep
 evals/.work
+apps/docs/public/r
+apps/docs/public/docs
+apps/docs/public/llms.txt
+apps/docs/public/llms-full.txt
